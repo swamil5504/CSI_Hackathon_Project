@@ -4,7 +4,7 @@ The website includes information about GreenImpact's mission, initiatives, achie
 
 Keep in mind the website is for a fictional NGO.
 
-Project Structure:
+**Project Structure**
 
 index.html: The main page of the website.
 
@@ -18,7 +18,7 @@ joinus.html: A form for users to express interest in joining the cause.
 
 styles.css: The stylesheet for the website.
 
-Getting Started:
+**Getting Started:**
 To run the website locally, follow these steps:
 
 1)Clone the repository: git clone https://github.com/swamil5504/CSI_Hackathon_Project.git.
@@ -29,7 +29,7 @@ To run the website locally, follow these steps:
 
 4)Launch the website by opening index.html with a live server.
 
-Technical Details:
+**Technical Details:**
 
 The website is built using HTML and CSS.
 
@@ -37,17 +37,17 @@ It features a responsive design for both phones and laptops and includes a toggl
 
 JavaScript is used to control the carousel on the main page.
 
-Challenges Faced:
+**Challenges Faced:**
 
 The project faced challenges in making the page responsive and designing an effective toggle bar for the navigation menu on smaller screens.
 
-Solutions:
+**Solutions:**
 
 To overcome these challenges, custom CSS and media queries were used to ensure responsiveness on different screen sizes.
 
 JavaScript was employed to create a toggle bar that efficiently handles navigation on smaller screens.
 
-Acknowledgments:
+**Acknowledgments:**
 
 The project was developed as part of the CSI Hackathon. I would like to thank the event organizers for their collaboration and hard work.
 
