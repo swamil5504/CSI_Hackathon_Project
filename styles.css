@@ -1,0 +1,299 @@
+/* Common styles for both phones and laptops */
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(40, 167, 69);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    margin: 0;
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+/* CSS for the "Join Us" link in about.html */
+.about-join-us {
+    margin-right: 30px; /* Adjust the margin as needed */
+}
+.gallery-join-us {
+    margin-right: 30px; /* Adjust the margin as needed */
+}
+.partnerships-join-us {
+    margin-right: 30px; /* Adjust the margin as needed */
+}
+.joinus-join-us {
+    margin-right: 30px; /* Adjust the margin as needed */
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.transparent-button2,
+.transparent-button3,
+.transparent-button4,
+.transparent-button5 {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.toggle-button {
+    display: block;
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(40, 167, 69);
+    position: absolute;
+    top: 100px; /* Adjust as needed */
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.menu.active {
+    display: flex;
+}
+
+/* Reduced the gap when the menu is open */
+.menu.active {
+    display: flex;
+    margin-top: 5px;
+}
+
+/* Rest of your existing styles... */
+
+.carousel {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-button {
+    background-color: rgb(40, 167, 69);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 3px;
+}
+
+.prev-button {
+    order: 2;
+}
+
+.next-button {
+    order: 3;
+}
+
+.carousel-slide {
+    max-width: 100%;
+    display: none;
+}
+
+/* Show the first slide initially */
+.carousel-slide:first-child {
+    display: block;
+}
+
+hr {
+    color: aliceblue;
+    margin-left: 380px;
+    margin-right: 380px;
+}
+
+.infomain {
+    text-align: center;
+    font-size: 40px;
+    color: #343a40;
+    height: 250px;
+}
+
+.GreenImpact-description {
+    text-align: center;
+    font-size: 20px;
+    color: #6c757d;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.infomain2 {
+    text-align: center;
+    font-size: 40px;
+    color: #343a40;
+    height: 700px;
+}
+
+.infomain2 p {
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.box {
+    background-color: rgb(40, 167, 69);
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust the margin to control the space between boxes */
+.box + .box {
+    margin-left: 10px;
+}
+
+.infomain3 {
+    text-align: center;
+    font-size: 40px;
+    color: #343a40;
+    height: 500px;
+}
+
+.infomain3 p {
+    font-size: 20px;
+    color: #343a40;
+}
+
+.footer {
+    background-color: #FAF9F6;
+    font-size: 40px;
+    height: 200px;
+    text-align: center;
+}
+
+.footer p {
+    color: rgb(40, 167, 69);
+    font-size: 25px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer li {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer img {
+    max-width: 30px;
+    height: auto;
+}
+
+.content {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 50px;
+    height: 450px;
+}
+
+.infomainabout {
+    text-align: center;
+    font-size: 40px;
+    color: #343a40;
+    height: 500px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .transparent-button,
+    .transparent-button2,
+    .transparent-button3,
+    .transparent-button4,
+    .transparent-button5 {
+        margin: 5px; 
+        text-align: center;
+        width: 100%; 
+    }
+
+    .navbar {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .toggle-button {
+        margin: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(40, 167, 69);
+        position: absolute;
+        top: 100px; 
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}

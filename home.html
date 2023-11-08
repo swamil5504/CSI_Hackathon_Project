@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenImpact</title>
+    <link rel="icon" href="leaflogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="leaflogo.png" alt="Logo" class="logo">
+        <h1>GreenImpact</h1>
+        <button class="toggle-button">☰</button>
+        <div class="menu">
+            <a href="home.html" class="transparent-button">Home</a>
+            <a href="about.html" class="transparent-button2">About</a>
+            <a href="gallery.html" class="transparent-button3">Gallery</a>
+            <a href="partnerships.html" class="transparent-button4">Partnerships</a>
+            <a href="joinus.html" class="transparent-button5">Join Us</a>
+            <!-- Add a new link for prospective partners -->
+        </div>
+    </div>
+    
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="treespic.jpg" alt="Image 1" class="carousel-slide">
+            <img src="grouppic1.jpg" alt="Image 2" class="carousel-slide">
+            <img src="grouppic2.jpg" alt="Image 3" class="carousel-slide">
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-button prev-button">Prev.</button>
+            <button class="carousel-button next-button">Next</button>
+        </div>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+
+        function showSlide(slideIndex) {
+            slides.forEach((slide, index) => {
+                if (index === slideIndex) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function changeSlide(n) {
+            currentSlide += n;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            } else if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+
+        document.querySelector('.prev-button').addEventListener('click', () => changeSlide(-1));
+        document.querySelector('.next-button').addEventListener('click', () => changeSlide(1));
+        
+        const toggleButton = document.querySelector('.toggle-button');
+        const menu = document.querySelector('.menu');
+        let isMenuOpen = false;
+        
+        toggleButton.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                menu.style.display = 'flex';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+    
+    <hr>
+
+    <div class="infomain">
+        <b><u>Who we are</u></b>
+        <div class="GreenImpact-description">
+            <p>
+                “GreenImpact” is a group of like-minded people who come together with the motive of countering climate change, one step at a time.
+                
+                From a casual gathering of four people who set out one breezy September morning to plant a sapling, to a community of 400+ youngsters gathering every Sunday morning – GreenImpact has grown into a social group that acts as a host for each and every inspired youngster who wants to give back to the environment.
+    
+                We at GreenImpact refuse to become armchair judgmentals. We are go-getters, adamant to fight climate change.
+    
+                We encourage you to join us and contribute towards this noble cause.
+            </p>
+        </div>
+    </div>
+      
+    <hr>
+
+    <div class="infomain2">
+        <b><u>What we do</u></b>
+        <div class="GreenImpact-description2">
+            <div class="boxes-container">
+                <div class="box">
+                    <img src="box1.jpeg" alt="Small Picture 1">
+                    <b><p>Plantation Drives<br></b>
+                    <br>
+                    From September 2019, we have been planting saplings on hillocks and empty spaces of land. We are the proud hosts of 60+ plantation drives across all zones at prime spots of Pune and have planted 1000+ saplings. We tend to our plants; we water them, protect them using green sheds and make sure they are living healthy lives.
+                </p>
+                </div>
+                <div class="box">
+                    <img src="box2.jpeg" alt="Small Picture 2">
+                    <b><p>Cleanliness Drives<br></b>
+                    <br>
+                    Our vigilant group members regularly target places with accumulated waste and clean it up. We take the necessary precautions before, during, and after the cleanliness drive. We reuse and recycle the plastic bottles and use them to make tags and drip systems for our plants.
+                </p>
+                </div>
+                <div class="box">
+                    <img src="box3.jpeg" alt="Small Picture 3">
+                    <b><p>Lockdown Initiatives<br></b>
+                    <br>
+                    "No matter what falls on us we keep on plowing ahead that's how we keep the roads clear" Because of the lockdown, we were unable to organize plantation and clean-up drives; however, this did not deter us; instead, we developed new home initiatives such as bird feeders, composting, and microfarming, through which people began spending their free time close to nature from the comfort of their own homes.
+                </p>
+                </div>
+                <div class="box">
+                    <img src="box4.jpg" alt="Small Picture 4">
+                    <b><p>Paper Bag Making Drives<br></b>
+                    <br>
+                    As firm supporters of reusing and recycling waste, we make paper bags out of newspapers to promote the cause. These paper bags are distributed to small-scale vendors, as an attempt to reduce the use of plastic bags.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="infomain3">
+        <u><b>Our Achievements</b></u>
+        <p>From a small band of enthusiastic youngsters to a group of <b>400+</b> volunteers, here is what we have achieved in our journey so far:</p>
+        
+        <div class="achievement-icons">
+            <div class="achievement-icon">
+                <img src="icon_sapling.png" alt="Sapling Icon">
+                <p>1200+ Saplings Planted</p>
+            </div>
+            <div class "achievement-icon">
+                <img src="icons_recycle.png" alt="Icon 2">
+                <p>350+ kgs Garbage cleaned/recycled</p>
+            </div>
+            <div class="achievement-icon">
+                <img src="icons_paper_bag.png" alt="Icon 3">
+                <p>2300+ Paper Bags made</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="footer">
+        <p>Our Zones
+            <ul>
+                <li>Kothrud</li>
+                <li>Sahakarnagar</li>
+                <li>Hadapsar</li>
+                <li>Pimpri-Chinchwad</li>
+            </ul>
+        </p>
+
+        <p>Social Media Handles<br>
+            <a href="https://www.instagram.com/_.swamil._/" target="_blank"><img src="iconsinsta.png" alt="Social Media Icon"></a>
+            <a href="https://www.linkedin.com/in/swamil-randive-00070a246/" target="_blank"><img src="iconslinkedin.png" alt="Social Media Icon 2"></a>
+        </p>
+    </div>
+</body>
+</html>
