@@ -16,6 +16,7 @@ styles.css: The stylesheet for the website.
 
 Getting Started:
 To run the website locally, follow these steps:
+
 1)Clone the repository: git clone https://github.com/swamil5504/CSI_Hackathon_Project.git.
 
 2)Open the project directory in your preferred code editor, such as Visual Studio Code.
